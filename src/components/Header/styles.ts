@@ -5,8 +5,7 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 1.8rem 10rem;
-
-  background-color: #21212150;
+  background-color: #f5f5f550;
 
   backdrop-filter: blur(6px);
   position: fixed;
@@ -20,7 +19,7 @@ export const Container = styled.header`
     align-items: center;
     gap: 1.8rem;
     a {
-      color: #ffff;
+      color: black;
       padding: 0.6rem;
       font-family: "Red Hat Display", sans-serif;
       font-weight: 500;

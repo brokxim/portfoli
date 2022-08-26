@@ -7,14 +7,15 @@ export const GlobalStyle = createGlobalStyle`
     --black: #212121;
     --green: #23ce6b;
     --blue: #016fb9;
+    --white: #ffffff;
     scroll-padding-top: 10rem;
 
     &.light{
 
       body{
         transition: 0.5s;
-        background-color: #f5f5f5;
-        color: var(--black);
+        background-color: var(--black);
+        color: var(--white);
       }
 
       .logo{
@@ -23,10 +24,11 @@ export const GlobalStyle = createGlobalStyle`
 
       header.header-fixed{
         transition: 0.5s;
-        background-color: #f5f5f550;
+        background-color: #21212150;
+
         a{
           transition: 0.5s;
-          color: black;
+          color: var(--white);
         }
         .menu,.menu:before, .menu:after{
           background-color: var(--black); 
@@ -79,8 +81,8 @@ export const GlobalStyle = createGlobalStyle`
   body{
     font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--black);
-    color: #FFFF;
+    background-color: var(--white);
+    color: var(--black);
   }
 
   body, input, textarea, button{
@@ -113,11 +115,11 @@ export const GlobalStyle = createGlobalStyle`
 
   .logo{
     font-size: 3rem;
-    color: #FFFF;
+    color: var(--black);
     &::first-letter{
       color: var(--green);
     }
   }
-  
+  .logo_span{  color: #FFFF;}
 
 `;

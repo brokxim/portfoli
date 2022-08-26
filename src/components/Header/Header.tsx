@@ -1,15 +1,14 @@
 import { Container } from "./styles";
 import { BrowserRouter as Router } from "react-router-dom";
-import { NavHashLink, HashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
 
-import Curriculo from "../../assets/IbrokhimAlhatkulov-Resume.pdf";
+import Curriculo from "../../assets/Akhatkulov Ibrokhim's Resume .pdf";
 export function Header() {
   const [isActive, setActive] = useState(false);
 
   function toggleTheme() {
     let html = document.getElementsByTagName("html")[0];
-    console.log(html);
     html.classList.toggle("light");
   }
 
@@ -34,28 +33,27 @@ export function Header() {
         />
         <label htmlFor="switch">Toggle</label>
 
-        <nav className={isActive ? "active" : ""}>
-          <NavHashLink smooth to="#home" onClick={closeMenu}>
+        <nav>
+          <HashLink smooth to="#home" onClick={closeMenu}>
             Home
-          </NavHashLink>
-          <NavHashLink smooth to="#aboutme" onClick={closeMenu}>
+          </HashLink>
+          <HashLink smooth to="#aboutme" onClick={closeMenu}>
             About me
-          </NavHashLink>
-          <NavHashLink smooth to="#skills" onClick={closeMenu}>
+          </HashLink>
+          <HashLink smooth to="#skills" onClick={closeMenu}>
             Skills
-          </NavHashLink>
-          <NavHashLink smooth to="#portfolio" onClick={closeMenu}>
+          </HashLink>
+          <HashLink smooth to="#portfolio" onClick={closeMenu}>
             Portfolio
-          </NavHashLink>
-          <NavHashLink smooth to="#contact" onClick={closeMenu}>
+          </HashLink>
+          <HashLink smooth to="#contact" onClick={closeMenu}>
             Contact
-          </NavHashLink>
+          </HashLink>
           <a href={Curriculo} download className="button">
             CV
           </a>
         </nav>
-
-        <div
+        {/* <div
           aria-expanded={isActive ? "true" : "false"}
           aria-haspopup="true"
           aria-label={isActive ? "Fechar menu" : "Abrir menu"}
@@ -63,7 +61,7 @@ export function Header() {
           onClick={() => {
             setActive(!isActive);
           }}
-        ></div>
+        ></div> */}
       </Router>
     </Container>
   );

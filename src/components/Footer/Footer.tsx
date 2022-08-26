@@ -7,7 +7,7 @@ export function Footer() {
     <Container className="footer">
       <a href="#" className="logo">
         <span>A.</span>
-        <span>Ibrohim</span>
+        <span className="logo_span">Ibrohim</span>
       </a>
       <div>
         <p>

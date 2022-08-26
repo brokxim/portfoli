@@ -4,7 +4,6 @@ import htmlIcon from "../../assets/html-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
-import nextIcon from "../../assets/nextjs.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import aisPortfolio from "../../assets/aisportfolio.jpg";
 
